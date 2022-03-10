@@ -69,12 +69,16 @@ html {
   align-items: center;
 }
 
+.header {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
 .header--light {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f5f5f5;
 }
 
 .header--dark {
@@ -82,7 +86,6 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   background-color: #21222a;
 }
 
@@ -95,8 +98,14 @@ html {
   cursor: pointer;
 }
 
-.body--heading {
+.body--heading--dark {
   font-size: 5rem;
+  color: #f5f5f5;
+}
+
+.body--heading--light {
+  font-size: 5rem;
+  color: #000;
 }
 
 li::marker {
@@ -104,7 +113,12 @@ li::marker {
   font-size: 1.5rem;
 }
 
-li p {
+.list-item--dark {
+  color: #f5f5f5;
+  font-size: 1.5rem;
+}
+.list-item--light {
+  color: #000;
   font-size: 1.5rem;
 }
 
